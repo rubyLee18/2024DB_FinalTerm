@@ -1,0 +1,92 @@
+/* 전체 배경과 텍스트 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+}
+
+h1 {
+    text-align: left;
+    
+}
+
+/* 상단 버튼 스타일 */
+button {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+/* 갤러리 레이아웃 */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 80%;
+    max-width: 1000px;
+    margin-bottom: 20px;
+}
+
+/* 각 게시물 카드 스타일 */
+.post {
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+}
+
+.post:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 이미지 스타일 */
+.post img {
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    object-fit: cover;
+}
+
+/* 제목 스타일 */
+.post h2 {
+    font-size: 14px;
+    text-align: center;
+}
+
+/* 페이징 스타일 */
+.pagination {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #f2f2f2;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+}

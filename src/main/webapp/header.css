@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+    #header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 36px;
+    }
+
+    .buttons {
+        margin-left: auto; /* 버튼들을 오른쪽으로 이동시킵니다 */
+    }
+
+    .buttons button {
+        background-color: #000000;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .buttons button:hover {
+        background-color: #45a049;
+    }
+
